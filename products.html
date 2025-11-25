@@ -760,12 +760,12 @@
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="index.html#about" class="nav-link">About Us</a></li>
-        <li><a href="#corporate" class="nav-link">Corporate Gifts</a></li>
-        <li><a href="#personalized" class="nav-link">Personalized Gifts</a></li>
-        <li><a href="#business" class="nav-link">Business Essentials</a></li>
-        <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="products.html#corporate" class="nav-link">Corporate Gifts</a></li>
+        <li><a href="products.html#personalized" class="nav-link">Personalized Gifts</a></li>
+        <!-- Business Essentials removed -->
+        <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
       </ul>
 
       <button class="cta-btn" onclick="location.href='get-a-quote.html'">Get a Quote</button>
@@ -783,7 +783,7 @@
       <div class="container hero-grid">
         <div class="left">
           <h1 id="heroTitle">All Products — Find exactly what you need</h1>
-          <p>Browse corporate gifts, personalized treasures and business essentials. Click any product for full details, minimum quantity, and bulk pricing, then order directly on WhatsApp or via our form.</p>
+          <p>Browse corporate gifts and personalized treasures. Click any product for full details, minimum quantity, and bulk pricing, then order directly on WhatsApp or via our form.</p>
         </div>
         <figure class="hero-figure" aria-hidden="true">
           <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1556821552-5f73541e6b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Catalog hero"/>
@@ -795,16 +795,17 @@
       <!-- Category cards -->
       <div class="categories-grid" role="list" aria-label="Product categories">
         <div class="category-card" role="listitem" onclick="scrollToSection('corporate')" tabindex="0" onkeypress="if(event.key==='Enter')scrollToSection('corporate')">
-          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1612521334484-bfb1f3f0cedc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Corporate"/>
-          <div class="category-overlay"><div><h3>Corporate & Promotional</h3><p>Keychains, Pens, Gift Sets, T-Shirts</p></div></div>
+          <img loading="lazy" decoding="async" src="corporate-img.png"/>
+          <div class="category-overlay"><div><h3>Corporate & Promotional</h3><p>Keychains, Pens, Gift Sets</p></div></div>
         </div>
         <div class="category-card" role="listitem" onclick="scrollToSection('personalized')" tabindex="0" onkeypress="if(event.key==='Enter')scrollToSection('personalized')">
-          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1572302265669-2acefa827fca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Personalized"/>
+          <img loading="lazy" decoding="async" src="personalized-img.png" alt="Personalized"/>
           <div class="category-overlay"><div><h3>Personalized Gifts</h3><p>Mugs, Cushions, Photo Gifts</p></div></div>
         </div>
-        <div class="category-card" role="listitem" onclick="scrollToSection('business')" tabindex="0" onkeypress="if(event.key==='Enter')scrollToSection('business')">
-          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1599909695241-b6c7e2ae4e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Business"/>
-          <div class="category-overlay"><div><h3>Business Essentials</h3><p>Visiting cards, Stationery, Office</p></div></div>
+        <!-- Business / Apparel category removed — products from those categories will now appear under "Other Products" -->
+        <div class="category-card" role="listitem" onclick="scrollToSection('other')" tabindex="0" onkeypress="if(event.key==='Enter')scrollToSection('other')">
+          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1599909695241-b6c7e2ae4e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Other"/>
+          <div class="category-overlay"><div><h3>Other Products</h3><p>Stationery, Accessories, Misc</p></div></div>
         </div>
       </div>
 
@@ -821,11 +822,7 @@
         <div id="personalizedEmpty" class="empty" style="display:none">No products found in this category.</div>
       </section>
 
-      <section id="business" class="section" aria-label="Business Essentials Section">
-        <h2>Business Essentials</h2>
-        <div id="businessGrid" class="products-grid" aria-live="polite" aria-busy="false"></div>
-        <div id="businessEmpty" class="empty" style="display:none">No products found in this category.</div>
-      </section>
+      <!-- Business section removed -->
 
       <section id="other" class="section" aria-label="Other Products Section">
         <h2>Other Products</h2>
@@ -1014,18 +1011,17 @@
           <div class="footer-col">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#corporate" class="footer-link">Corporate Gifts</a></li>
-              <li><a href="#personalized" class="footer-link">Personalized Gifts</a></li>
-              <li><a href="#business" class="footer-link">Business Essentials</a></li>
-              <li><a href="#other" class="footer-link">Other Products</a></li>
+              <li><a href="products.html#corporate" class="footer-link">Corporate Gifts</a></li>
+              <li><a href="products.html#personalized" class="footer-link">Personalized Gifts</a></li>
+              <li><a href="products.html#other" class="footer-link">Other Products</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h3>Company</h3>
             <ul>
-              <li><a href="index.html#about" class="footer-link">About Us</a></li>
-              <li><a href="index.html#contact" class="footer-link">Contact Us</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact-us.html#contact" class="footer-link">Contact Us</a></li>
               <li><a href="get-a-quote.html" class="footer-link">View Full Catalog</a></li>
             </ul>
           </div>
@@ -1080,14 +1076,12 @@
     // Grid refs
     const corporateGrid = document.getElementById('corporateGrid');
     const personalizedGrid = document.getElementById('personalizedGrid');
-    const businessGrid = document.getElementById('businessGrid');
     const otherGrid = document.getElementById('otherGrid');
 
     // Empty placeholders
     const empties = {
       corporate: document.getElementById('corporateEmpty'),
       personalized: document.getElementById('personalizedEmpty'),
-      business: document.getElementById('businessEmpty'),
       other: document.getElementById('otherEmpty')
     };
 
@@ -1135,10 +1129,9 @@
       // Clear grids
       corporateGrid.innerHTML = '';
       personalizedGrid.innerHTML = '';
-      businessGrid.innerHTML = '';
       otherGrid.innerHTML = '';
 
-      const counts = {corporate:0,personalized:0,business:0,other:0};
+      const counts = {corporate:0,personalized:0,other:0};
 
       allProducts = [];
       window._prabhaProducts = {};
@@ -1149,18 +1142,16 @@
         const card = createProductCard(p);
         const cat = (p.category || '').toLowerCase();
 
+        // New mapping: Business/Apparel removed -> send such products to "other".
         if (cat.includes('corporate') || cat.includes('promot')) {
           corporateGrid.appendChild(card); counts.corporate++;
         }
         else if (cat.includes('personal')) {
           personalizedGrid.appendChild(card); counts.personalized++;
         }
-        else if (cat.includes('business') || cat.includes('essent')) {
-          businessGrid.appendChild(card); counts.business++;
-        }
-        else if (cat.includes('shirt') || cat.includes('t-shirt') || cat.includes('polo')) {
-          // Treat clothing as part of corporate gifts now
-          corporateGrid.appendChild(card); counts.corporate++;
+        else if (cat.includes('business') || cat.includes('essent') || cat.includes('apparel') || cat.includes('shirt') || cat.includes('t-shirt') || cat.includes('polo')) {
+          // Business/apparel categories have been removed from the UI — show them under "Other Products"
+          otherGrid.appendChild(card); counts.other++;
         }
         else {
           otherGrid.appendChild(card); counts.other++;
@@ -1537,7 +1528,7 @@
       _trap = null;
     }
 
-    console.log('🎉 Prabha Graphics Products Page - Updated with new header/footer, friendlier form, MOQ + bulk pricing.');
+    console.log('🎉 Prabha Graphics Products Page - Business/Apparel removed: such products show under "Other Products" now.');
   </script>
 
   <!-- Header / navbar JS (non-module, from homepage) -->
